@@ -3,8 +3,36 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
+        <script>
+            function essai(t){
+                alert(t);
+            }
+            function changecouleur(i, t){
+                document.getElementById(i).style.color=t;
+            }
+        </script>
     </head>
     <body>
-        
+        <h1 id="paragraphe">devient vert normalement</h1>
+        <button onclick="essai('incroyable!')">pop-up</button><br><br>
+
+        <div>
+            <input id="couleur" value="">
+            <button onclick="changecouleur('paragraphe', document.getElementById('couleur').value)">couleur</button><br><br>
+        </div>
+  
+
+        <div class="calculatrice" id="calculatrice">
+            <!-- <button class="button_9" id="button_9" href="#">9</button>
+            <button class="button_8" id="button_8" href="#">8</button>
+            <button class="button_7" id="button_7" href="#">7</button>
+            <button class="button_6" id="button_6" href="#">6</button>
+            <button class="button_5" id="button_5" href="#">5</button>
+            <button class="button_4" id="button_4" href="#">4</button>
+            <button class="button_3" id="button_3" href="#">3</button>
+            <button class="button_2" id="button_2" href="#">2</button>
+            <button class="button_1" id="button_1" href="#">1</button>
+            <button class="button_0" id="button_0" href="#">0</button> -->
+        </div>
     </body>
 </html>
